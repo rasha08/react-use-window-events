@@ -48,7 +48,7 @@ export default App;
 
 [Radovan Stevanovic](https://github.com/rasha08)
 
-[Aleksandar Ilic](https://github.com/clili93)
+[Aleksandar Ilic](https://github.com/cili93)
 
 ## License
 
