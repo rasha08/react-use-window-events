@@ -1,13 +1,18 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
+import { useWindowEvents } from 'react-use-window-events'
 
-import ExampleComponent from 'react-use-window-events'
+import { handleWindowsResize } from '...'
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
+const App = () => {
+
+  useEffect(() => {
+    useWindowEvents(['resize'], handleWindowsResize);
+  }, [])
+
+  return (
+    <div>
+      App content goes here
       </div>
-    )
-  }
+  )
+
 }
